@@ -1,123 +1,124 @@
 body {
+    color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     position: relative;
 }
 header {
-    padding-top: 50px;
-    text-align: center;
-    width: 100%;
     background-color: white;
     border-bottom: 3px solid #cccccc;
-    position: fixed;
-    top: 0px;
     left: 0px;
+    padding-top: 50px;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
 }
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24pt;
     font-weight: bold;
 }
-body {
-    color: #777777;
-}
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
+    
 }
 .item1 {
-    width: 25%;
     float: left;
     text-align: center;
     padding: 30px;
+    width: 25%;
 }
 .item2 {
+    bottom: 7px;
     float: left;
-    width: 75%;
     position: absolute;
     right: 0px;
-    bottom: 7px;
+    width: 75%;
 }
 li {
     float: right;
 }
 #name {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
     background-color: #4aaaa5;
+    bottom: 0px;
     color: #ffffff;
+    display: block;
+    float: left;
+    left: 0px;
+    padding: 14px 16px;
+    position: absolute;
+    text-align: center;        
 }
 li a {
+    
+    color: #777777;
     display: block;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    color: #777777;
+    padding: 14px 16px;
 }
 li a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
 }
-.content {
-    margin-top: 25px;
+.text2 {
+    height: 100%;
     margin-bottom: 100px;
-    width: 100%;
+    margin-top: 25px;
     position: relative;
     top: 150px;
-    height: 100%;
+    width: 100%;
     z-index: -1;
 }
-.title {
+.head {
     border-bottom: 3px solid #777777;
-    padding: 20px;
+    clear: both;
     color: #4aaaa5;
     float: left;
-    width: 90%;
     margin-left: 20px;
     overflow: auto;
-    clear: both;
+    padding: 20px;
+    width: 90%;      
+    
 }
-#portrait {
-    overflow: auto;
+#photo {
     clear: both;
     float: left;
+    overflow: auto;
     padding-right: 20px;
 }
-.row {
-    overflow: auto;
+.rows {
     clear: both;
+    overflow: auto;
     margin-bottom: 50px;
 }
-.col {
-    margin-left: 30px;
+.columns {
     float: left;
+    margin-left: 30px;
     position: relative;
 }
-.banner {
-    overflow: auto;
-    clear: both;
+.activity  {
     background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
     bottom: 10px;
-    width: 100%;
+    clear: both;
+    color: #ffffff;
+    font-size: 14pt;
+    overflow: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 14pt;
+    position: absolute;
+    text-align: center;
+    width: 100%;   
 }
-.grid {
+.table {
     overflow: auto;
     clear: both;
     margin-bottom: 25px;
 }
-.paragraph1 {
+.block1 {
     overflow: auto;
     clear: both;
     vertical-align: baseline;
@@ -137,18 +138,20 @@ li a:hover {
     position: relative;
     border: 2px solid #dddddd;
 }
+/* Trying the "sticky" footer*/
 footer {
-    width: 100%;
-    position: sticky;
-    bottom: 0px;
-    text-align: center;
     background-color: #666666;
-    color: #ffffff;
     border-top: 5px solid #4aaaa5;
-    padding-top: 30px;
-    padding-bottom: 3px;
+    bottom: 0px;
+    color: #ffffff;
     margin-top: 30%;
+    padding-bottom: 3px;
+    padding-top: 30px;
+    position: sticky;
+    text-align: center;
+    width: 100%;
 }
+/* CSS for contact.html page */
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
